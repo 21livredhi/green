@@ -1,6 +1,22 @@
 <?php
 
 /**
+ * API接口返回数据
+ * @param type $message 消息
+ * @param type $statusCode 状态码(200:成功,300:失败,301:超时)
+ * @param type $data
+ */
+function apiReturn($message, $statusCode = 200, $data = array()) {
+    $ret = array(
+        'message' => $message,
+        'statusCode' => $statusCode,
+        'data' => $data,
+    );
+    echo json_encode($ret, JSON_UNESCAPED_UNICODE);
+    exit;
+}
+
+/**
  * ajax返回数据
  * @param type $message 消息
  * @param type $statusCode 状态码(200:成功,300:失败,301:超时)

@@ -16,7 +16,7 @@ return array(
         '__CSS__' => __ROOT__ . '/Public/js',
     ),
     //允许访问模块列表
-    'MODULE_ALLOW_LIST' => array('Home', 'Admin'),
+    'MODULE_ALLOW_LIST' => array('Home', 'Admin', 'Api'),
     //URL伪静态后缀设置
     'URL_HTML_SUFFIX' => '',
     //默认AJAX数据返回格式
@@ -56,4 +56,6 @@ return array(
     ),
     //默认分页显示数目
     'PAGE_SIZE' => 30,
+    //API接口KEY
+    'API_KEY' => '7257ff0e8031385224ec36f00ec1b76a',
 );
