@@ -10,6 +10,6 @@ use Common\Controller\ApiController;
 class IndexController extends ApiController {
     
     public function index() {
-
+        echo 'test';
     }
 }
